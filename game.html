@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Adivinhe a Palavra</title>
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script -->
+    <script src="gameLogin.js"></script>
+</head>
+<body class="bg-dark text-light text-center">
+    <div class="container d-grid gap-4">
+        <div class="row">
+            <div id="p1Name" class="col-6 text-start"><h6 class="display-6 text-primary">A: <span id="p1Score">2</span></h6></div>
+            <div id="p2Name" class="col-6 text-end"><h6 class="display-6 text-success">B: <span id="p2Score">4</span></h6></div>
+        </div>
+        <h1 class="display-1">Adivinhe a Palavra</h1>
+        <h4 id="playerQuestion" class="display-4 text-bg-secondary rounded-4">Perguntando: A</h4>
+        <h4 id="playerAnswer" class="display-4 text-bg-secondary rounded-4">Respondendo: B</h4>
+        <div id="output" class="col-lg-6 mx-auto text-bg-info rounded-4"></div>
+        <label class="">Digite sua palavra <span class="text-danger">Escolha uma palavra com 5 ou mais letras</span></label>
+        <input id="word" type="text" class="form-control-lg" placeholder="palavra">
+        <button onclick="send()" class="btn btn-danger col-9 col-sm-5 col-lg-2 mx-auto">Enviar</button>
+    </div>
+
+    <!-- javascript -->
+    <script src="gameMain.js"></script>
+</body>
+</html>
